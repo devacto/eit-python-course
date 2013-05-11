@@ -22,7 +22,7 @@
 			<p class="view"><a href="codelab0.html">Code Lab 0</a>,
 			                <a href="codelab1.html">Code Lab 1</a>,
 			                <a href="codelab2.html">Code Lab 2</a>,
-			                <a href="codelab3.html">Code Lab 3</a>,
+			                Code Lab 3,
 			                <a href="codelab4.html">Code Lab 4</a>,
 			                <a href="codelab5.html">Code Lab 5</a>,
 			                <a href="codelab6.html">Code Lab 6</a>,
@@ -43,26 +43,46 @@
 		</header>
 		<section>
 			<h1>Code Lab 3</h1>
-			<p>Congratulations for having set up and customised your development environment! That's really the first step into the world of programming!</p>
+			<p>Phew! You are almost there on your first day! This code lab session is going to be really interesting!</p>
 			
-			<h2>Exercise 1 - Testing your program</h2>
-			<p>In this first exercise, we are going to try to get the computer to print something onto the screen.</p>
-			<pre><code>print "Hello World!"
-print "Yay!"</code></pre>
+			<h2>Exercise 1 - Variables and names</h2>
+			<p>Now you can print things with print and can do math. The next step is to learn about variables. In programming, a variable is nothing more than a name we give to something we program. This is useful so we will refer to the more meaningful name rather than its less meaningful value.</p>
+			<pre><code># This program demonstrate the use of variables.
+# Author: Victor Wibisono, May 2013
 
-			<h2>Exercise 2 - Commenting your code</h2>
-			<p>In this exercise, we are going to learn about how </p>
-			<pre><code># This program prints some sentences onto the screen
-# Author: Victor Wibisono (devacto@gmail.com)
+cars = 100
+space_in_a_car = 4.0
+drivers = 30
+passengers = 90
+cars_driven = drivers
 
-print "Yay!"
-print "My second program!"</code></pre>
+print "The number of cars in the garage is ", cars
+print "There are ", space_in_a_car, " spaces available in a car."
+print "There are only ", drivers, " drivers available."
+            </code></pre>
+
+			<h2>Exercise 2 - More variables! And maths!</h2>
+			<p>Now add the following codes to the same codelab3.py file.</p>
+			<pre><code>cars_not_driven = cars - drivers
+carpool_capacity = cars_driven * space_in_a_car
+average_passengers_per_car = passengers / car_driven
+
+print "So the number of cars that are not driven is ", cars_not_driven
+print "There are ", passengers, " passengers today."
+print "The number of people we can transport today is", carpool_capacity
+print "There is an average number of ", average_passengers_per_car, " per car."</code></pre>
 			
 			<h2>Go Further</h2>
-			<p>Congratulations for having completed the two exercises. Now it's time to go further and learn more by answering these questions:</p>
+			<p>Congratulations! Now to go further:</p>
 			<ol>
-				<li>Why do we need to put those comments on our code?</li>
+				<li>Explain why 4.0 is used in exercise 1 instead of just 4.</li>
+                <li>Remember that 4.0 is a "floating point" number. Find out what that means.</li>
+                <li>Write comments above each variable assignments to make it more readable.</li>
+                <li>Try running python as a calculator like you did before and use variable names to do your calculations.</li>
 			</ol>
+
+            <h2>Video Time!</h2>
+            <p>Good job on getting through the first day of the course! Now you can watch this cool video: [insert cool YouTube video].</p>
 		</section>
 		<footer>
 			<p>Maintained by <a href="https://github.com/devacto">Victor Wibisono</a></p>
