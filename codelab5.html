@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>EIT Python Course</title>
+
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<link rel="icon" type="image/png" href="icon/favicon.png">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/xcode.min.css">
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1><a href="index.html" style="color:black; font-weight:bold">EIT Python Course</a></h1>
+			<p>This is the repository for Eastlands Institute of Technology's (EIT) Python course.</p>
+			<p class="view"><a href="codelab0.html">Code Lab 0</a>, 
+			                <a href="codelab1.html">Code Lab 1</a>,
+			                <a href="codelab2.html">Code Lab 2</a>,
+			                <a href="codelab3.html">Code Lab 3</a>,
+			                <a href="codelab4.html">Code Lab 4</a>,
+			                Code Lab 5,
+			                <a href="codelab6.html">Code Lab 6</a>,
+			                <a href="codelab7.html">Code Lab 7</a>,
+			                <a href="codelab8.html">Code Lab 8</a>,
+			                <a href="codelab9.html">Code Lab 9</a>,
+			                <a href="codelab10.html">Code Lab 10</a>,
+			                <a href="codelab11.html">Code Lab 11</a>,
+			                <a href="codelab12.html">Code Lab 12</a>,
+			                <a href="codelab13.html">Code Lab 13</a>,
+			                <a href="codelab14.html">Code Lab 14</a>,
+			                <a href="codelab15.html">Code Lab 15</a>,
+			                <a href="codelab16.html">Code Lab 16</a>,
+			                <a href="codelab17.html">Code Lab 17</a>,
+			                <a href="codelab18.html">Code Lab 18</a>,
+			                <a href="codelab19.html">Code Lab 19</a>,
+			                <a href="codelab20.html">Code Lab 20</a></p>
+		</header>
+		<section>
+			<h1>Code Lab 5</h1>
+			<p>Welcome to the second exercise of the second day! </p>
+			
+			<h2>Exercise 1 - More printing!</h2>
+			<p>I hope you are not getting bored of printing yet. In the following exercise, </p>
+			<pre><code># This program demonstrates more advanced printing
+# Victor Wibisono, May 2013
+
+x = "There are %d types of people." % 10
+binary = "binary"
+dont = "don't"
+y = "Those who know %s and thos who %s." % (binary, dont)
+print y
+
+hilarious = false
+joke_evaluation = "Isn't that joke so funny?! %r"
+print joke_evaluation % hilarious
+
+w = "This is the left side of..."
+e = "a string with a right side."
+print w + e
+
+print "." * 10
+
+end1 = "C"
+end2 = "h"
+end3 = "e"
+end4 = "e"
+end5 = "s"
+end6 = "e"
+print end1 + end2 + end3,
+print end4 + end5 + end6</code></pre>
+            <p>Now run the code in the terminal by pressing the "Run" button and see the result. When you are done with this exercise, put comments before every section to indicate what each section of the exercise does.</p>
+
+			<h2>Exercise 2 - Printing, printing, printing!</h2>
+			<p>Now still in your codelab5.py file, continue with writing the following codes.</p>
+			<pre><code>formatter = "%r %r %r %r"
+print formatter % (1, 2, 3, 4)
+print formatter % ("one", "two", "three", "four")
+print formatter % (true, false, true, false)
+print formatter % (formatter, formatter, formatter, formatter)
+
+months = "Jan\nFeb\nMar\nApr\nMay\n"
+print "Here are the months: ", months
+
+print """
+There's something going on here.
+With the three double-quotes.
+We'll be able to type as much as we like.
+Even 4 lines if we want, or 5, or 6.
+"""
+
+tabby_cat = "\tI'm tabbed in."
+persian_cat = "I'm split\non a line."
+backslash_cat = "I'm \\ a \\ cat."
+print tabby_cat
+print persian_cat
+print backslash_cat</code></pre>
+            <p>Now run your code by pressing the "Run" button. Similarly, when you are done with this exercise, put comments before every section to indicate what each section of the exercise does.</p>
+			
+			<h2>Go Further</h2>
+			<p>Congratulations for having completed the two exercises. Now it's time to go further and learn more by answering these questions:</p>
+			<ol>
+				<li>Search online to see what other escape sequences are available.</li>
+                <li>Use triple-single-quote instead. Can you see why you might use that instead of """?</li>
+                <li>Combine escape sequences and format strings to create a more complex format.</li>
+			</ol>
+            <p>Also in programming, in order to improve your programming skills, you need to make some conscious effort to reduce mistakes (or what programmers call 'bugs'). Here are some ways:</p>
+            <ul>
+                <li>From now on, when you make mistakes write down on a piece of paper what kind of mistake you made.</li>
+                <li>When you go to the next exercise, look at the last mistakes you made and try not to make them in this new one.</li>
+                <li>Remember that everyone makes mistakes. Programmers are like magicians who like everyone to think they are perfect and never wrong, but it's all an act. They make mistakes all the time.</li>
+            </ul>
+
+		</section>
+		<footer>
+			<p>Maintained by <a href="https://github.com/devacto">Victor Wibisono</a></p>
+			<p>
+				<small>Hosted on GitHub Pages &mdash; Theme by <a
+					href="https://github.com/orderedlist">orderedlist</a></small>
+			</p>
+		</footer>
+	</div>
+	<script src="javascripts/scale.fix.js"></script>
+
+</body>
+</html>
