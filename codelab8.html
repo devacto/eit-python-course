@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>EIT Python Course</title>
+
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<link rel="icon" type="image/png" href="icon/favicon.png">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/xcode.min.css">
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1><a href="index.html" style="color:black; font-weight:bold">EIT Python Course</a></h1>
+			<p>This is the repository for Eastlands Institute of Technology's (EIT) Python course.</p>
+			<p class="view"><a href="codelab0.html">Code Lab 0</a>, 
+			                <a href="codelab1.html">Code Lab 1</a>,
+			                <a href="codelab2.html">Code Lab 2</a>,
+			                <a href="codelab3.html">Code Lab 3</a>,
+			                <a href="codelab4.html">Code Lab 4</a>,
+			                <a href="codelab5.html">Code Lab 5</a>,
+			                <a href="codelab6.html">Code Lab 6</a>,
+			                <a href="codelab7.html">Code Lab 7</a>,
+			                Code Lab 8,
+			                <a href="codelab9.html">Code Lab 9</a>,
+			                <a href="codelab10.html">Code Lab 10</a>,
+			                <a href="codelab11.html">Code Lab 11</a>,
+			                <a href="codelab12.html">Code Lab 12</a>,
+			                <a href="codelab13.html">Code Lab 13</a>,
+			                <a href="codelab14.html">Code Lab 14</a>,
+			                <a href="codelab15.html">Code Lab 15</a>,
+			                <a href="codelab16.html">Code Lab 16</a>,
+			                <a href="codelab17.html">Code Lab 17</a>,
+			                <a href="codelab18.html">Code Lab 18</a>,
+			                <a href="codelab19.html">Code Lab 19</a>,
+			                <a href="codelab20.html">Code Lab 20</a></p>
+		</header>
+		<section>
+			<h1>Code Lab 8</h1>
+			<p>Congratulations for getting through this far! I definitely admire your perseverance! Learning a new programming language is not always easy.</p>
+			
+			<h2>Exercise 1 - Reading files</h2>
+			<p>In this first exercise, we are going to write a program that reads an input from a text file. This file involves two files - one is a .txt file and another one a .py file. First off, make a .txt file with the following content.</p>
+			<pre><code class="no-highlight">This is a text file,
+that should be read by a Python script.</code></pre>
+            <p>Now in the .py file, write the following.</p>
+            <pre><code class="python"># This program reads a file
+# Victor Wibisono, May 2013
+
+from sys import argv
+
+script, filename = argv
+
+txt = open(filename)
+
+print "Here is your file %r:" % filename
+print txt.read()
+
+print "I'll also ask you to type it again:"
+file_again = raw_input("> ")
+
+txt_again = open(file_again)
+
+print txt_again.read()</code></pre>
+
+			<h2>Go Further</h2>
+			<p>Congratulations for having completed the exercise. Since this is quite a complicated concept, we are only doing one set of exercise. Now it's time to go further and learn more by answering these questions:</p>
+			<ol>
+				<li>Above each line, write comments in English saying what the line does. If you are unsure, inform an instructor.</li>
+                <li>Search around online to see what other people do to define "functions" and "methods". </li>
+                <li>Get rid of the part from line 10 - 15 where you use raw_input and try the script then.</li>
+                <li>Run "pydoc file" on the terminal and scroll down until you see the read() command (method / function). See all the other ones you can use? Skip the ones that have __ (two underscores) in front because those are irrelevant. Try some of the other commands.</li>
+                <li>Have your script also do a close() on the txt and txt_again variables. It's important to close file when you are done with them.</li>
+			</ol>
+
+		</section>
+		<footer>
+			<p>Maintained by <a href="https://github.com/devacto">Victor Wibisono</a></p>
+			<p>
+				<small>Hosted on GitHub Pages &mdash; Theme by <a
+					href="https://github.com/orderedlist">orderedlist</a></small>
+			</p>
+		</footer>
+	</div>
+	<script src="javascripts/scale.fix.js"></script>
+
+</body>
+</html>
