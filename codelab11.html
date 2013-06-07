@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>EIT Python Course</title>
+
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<link rel="icon" type="image/png" href="icon/favicon.png">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/xcode.min.css">
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1><a href="index.html" style="color:black; font-weight:bold">EIT Python Course</a></h1>
+			<p>This is the repository for Eastlands Institute of Technology's (EIT) Python course.</p>
+			<p class="view"><a href="codelab0.html">Code Lab 0</a>, 
+			                <a href="codelab1.html">Code Lab 1</a>,
+			                <a href="codelab2.html">Code Lab 2</a>,
+			                <a href="codelab3.html">Code Lab 3</a>,
+			                <a href="codelab4.html">Code Lab 4</a>,
+			                <a href="codelab5.html">Code Lab 5</a>,
+			                <a href="codelab6.html">Code Lab 6</a>,
+			                <a href="codelab7.html">Code Lab 7</a>,
+			                <a href="codelab8.html">Code Lab 8</a>,
+			                <a href="codelab9.html">Code Lab 9</a>,
+			                <a href="codelab10.html">Code Lab 10</a>,
+			                Code Lab 11,
+			                <a href="codelab12.html">Code Lab 12</a>,
+			                <a href="codelab13.html">Code Lab 13</a>,
+			                <a href="codelab14.html">Code Lab 14</a>,
+			                <a href="codelab15.html">Code Lab 15</a>,
+			                <a href="codelab16.html">Code Lab 16</a>,
+			                <a href="codelab17.html">Code Lab 17</a>,
+			                <a href="codelab18.html">Code Lab 18</a>,
+			                <a href="codelab19.html">Code Lab 19</a>,
+			                <a href="codelab20.html">Code Lab 20</a></p>
+		</header>
+		<section>
+			<h1>Code Lab 11</h1>
+			<p>Good to know you are completing much of the course!</p>
+			
+			<h2>Exercise 1 - Functions and files</h2>
+			<p>Before we start, let's learn about the 3 things functions do:</p>
+                <ul>
+                    <li>They name pieces of code the way variables name strings and numbers.</li>
+                    <li>They take arguments the way your scripts take argv.</li>
+                    <li>Using #1 and #2, they let you make your own "mini scripts" or "tiny commands".</li>
+                </ul>
+            <p>In this exercise, we are going to learn how to create and use functions!</p>
+			<pre><code class="python"># codelab10-1.py
+# This program has several functions
+# Victor Wibisono, May 2013
+
+                from sys import argv
+
+                script, input_file = argv
+
+                def print_all(f):
+                    print f.read()
+
+                def rewind(f):
+                    f.seek(0)
+
+                def print_a_line(line_count, f):
+                    print line_count, f.readline()
+
+                current_file = open(input_file)
+
+                print "First let's print the whole file:\n"
+
+                print_all
+
+# This one is like your scripts with argv
+def print_two(*args):
+    arg1, arg2 = args
+    print "arg1: %r, arg2: %r" % (arg1, arg2)
+
+# ok, that *args is actually pointless, we can just do this
+def print_two_again(arg1, arg2):
+    print "arg1: %r, arg2: %r" % (arg1, arg2)
+
+# this just takes one argument
+def print_one(arg1):
+    print "arg1: %r" % arg1
+
+# this one takes no arguments
+def print_none():
+    print "I got nothin'."
+
+print_two("Zed", "Shaw")
+print_two_again("Zed", "Shaw")
+print_one("First!")
+print_none()</code></pre>
+            <p>Now run the code in the terminal by pressing the "Run" button and see the result.</p>
+
+			<h2>Exercise 2 - Functions and variables</h2>
+			<p>Good job on getting the first exercise going! Now we will dive deeper into functions and variables.</p>
+			<pre><code># codelab10-2.py
+# This program demonstrates functions and variables
+# Victor Wibisono, May 2013
+
+def cheese_and_crackers(cheese_count, boxes_of_crackers):
+    print "You have %d cheese!" % cheese_count
+    print "You have %d boxes of crackers!" % boxes_of_crackers
+    print "Man, that's enough for a party!"
+    print "Get a blanket.\n"
+
+print "We can just give the function numbers directly:"
+cheese_and_Crackers(20, 30)
+
+print "OR, we can use variables from our script:"
+amount_of_cheese = 10
+amount_of_crackers = 50
+
+cheese_and_Crackers(amount_of_cheese, amount_of_crackers)
+
+print "We can even do math inside too:"
+cheese_and_crackers(10 + 20, 5 + 6)
+
+print "And we can combine the two, variables and math:"
+cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)</code></pre>
+            <p>Now run your code by pressing the "Run" button.</p>
+			
+			<h2>Go Further</h2>
+			<p>Congratulations for having completed the two exercises. Now it's time to go further and learn more by answering these questions:</p>
+			<ol>
+				<li>Go back through the script and type a comment above each line explaining in English what it does.</li>
+                <li>Write at least one more function of your own design and run it in 10 different ways.</li>
+			</ol>
+
+		</section>
+		<footer>
+			<p>Maintained by <a href="https://github.com/devacto">Victor Wibisono</a></p>
+			<p>
+				<small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+			</p>
+		</footer>
+	</div>
+	<script src="javascripts/scale.fix.js"></script>
+
+</body>
+</html>
