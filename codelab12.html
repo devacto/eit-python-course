@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>EIT Python Course</title>
+
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<link rel="icon" type="image/png" href="icon/favicon.png">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/xcode.min.css">
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1><a href="index.html" style="color:black; font-weight:bold">EIT Python Course</a></h1>
+			<p>This is the repository for Eastlands Institute of Technology's (EIT) Python course.</p>
+			<p class="view"><a href="codelab0.html">Code Lab 0</a>, 
+			                <a href="codelab1.html">Code Lab 1</a>,
+			                <a href="codelab2.html">Code Lab 2</a>,
+			                <a href="codelab3.html">Code Lab 3</a>,
+			                <a href="codelab4.html">Code Lab 4</a>,
+			                <a href="codelab5.html">Code Lab 5</a>,
+			                <a href="codelab6.html">Code Lab 6</a>,
+			                <a href="codelab7.html">Code Lab 7</a>,
+			                <a href="codelab8.html">Code Lab 8</a>,
+			                <a href="codelab9.html">Code Lab 9</a>,
+			                <a href="codelab10.html">Code Lab 10</a>,
+			                <a href="codelab11.html">Code Lab 11</a>,
+			                Code Lab 12,
+			                <a href="codelab13.html">Code Lab 13</a>,
+			                <a href="codelab14.html">Code Lab 14</a>,
+			                <a href="codelab15.html">Code Lab 15</a>,
+			                <a href="codelab16.html">Code Lab 16</a>,
+			                <a href="codelab17.html">Code Lab 17</a>,
+			                <a href="codelab18.html">Code Lab 18</a>,
+			                <a href="codelab19.html">Code Lab 19</a>,
+			                <a href="codelab20.html">Code Lab 20</a></p>
+		</header>
+		<section>
+			<h1>Code Lab 12</h1>
+			<p>Good to know you are completing much of the course!</p>
+
+			<h2>Exercise 1 - Practising everything</h2>
+			<p>Before we start, let's learn about the 3 things functions do:</p>
+			<pre><code class="python"># codelab12ex1.py
+# This program lets us practise everything we have learnt so far
+# Victor Wibisono, May 2013
+
+print "Let's practice everything."
+print "You\'d need to know \'bout escapes with \\ that do \n new lines and \t tabs."
+
+poem = """
+\t The lovely world
+with logic so firmly planted
+cannot discern \n the needs of love
+nor comprehend passion from intuition
+and requires an explanation
+\n\t\t where there is none.
+"""
+
+print "--------------"
+print poem
+print "--------------"
+
+five = 10 - 2 + 3 - 6
+print "This should be five: %s" % five
+
+def secret formula(started):
+    jelly-beans = started * 500
+    jars = jelly_beans / 1000
+    crates = jars / 100
+    return jelly_beans, jars, crates
+
+start_point = 10000
+beans, jars, crates = secret_formula(start_point)
+
+print "With a starting point of %d" % start_point
+
+print "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates)
+
+start_point = start_point / 10
+
+print "We can also do that this way:"
+print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)</code></pre>
+            <p>Now run the code in the terminal by pressing the "Run" button and see the result.</p>
+
+			<h2>Exercise 2 - Even more practice</h2>
+			<p>Good job on getting the first exercise going! Now we will dive deeper into functions and variables.</p>
+			<pre><code># codelab12ex2.py
+# This program demonstrates functions and variables
+# Victor Wibisono, May 2013
+
+def break_words(stuff):
+    """This function will break up words for us."""
+    words = stuff.split(' ')
+    return words
+
+def sort_words(stuff):
+    """Sorts the words."""
+    return sorted(words)
+
+def print_first_word(words):
+    """Prints the first word after popping it off."""
+    word = words.pop(0)
+    print word
+
+def print_last_word(words):
+    """Prints the last word after popping it off."""
+    word = words.pop(-1)
+    print word
+
+def sort_sentence(sentence):
+    """Takes in a full sentence and returns the sorted words"""
+    words = break_words(sentence)
+    return sort_words(words)
+
+def print_first_and_last(sentence):
+    """Prints the first and last words of the sentence."""
+    words = break_words(sentence)
+    print_first_words(words)
+    print_last_words(words)
+
+def print_first_and_last_sorted(sentence):
+    """Sorts the words then prints the first and last one."""
+    words = sort_sentence(sentence)
+    print_first_word(words)
+    print_last_word(words)</code></pre>
+            <p>Now run your code by pressing the "Run" button.</p>
+			
+			<h2>Go Further</h2>
+			<p>Congratulations for having completed the two exercises. Since this is quite a long exercise, there will not be any 'go further' exercises. Watch some YouTube videos if you'd like.</p>
+
+		</section>
+		<footer>
+			<p>Maintained by <a href="https://github.com/devacto">Victor Wibisono</a></p>
+			<p>
+				<small>Hosted on GitHub Pages &mdash; Theme by <a
+					href="https://github.com/orderedlist">orderedlist</a></small>
+			</p>
+		</footer>
+	</div>
+	<script src="javascripts/scale.fix.js"></script>
+
+</body>
+</html>
