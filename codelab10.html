@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>EIT Python Course</title>
+
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<link rel="icon" type="image/png" href="icon/favicon.png">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/xcode.min.css">
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1><a href="index.html" style="color:black; font-weight:bold">EIT Python Course</a></h1>
+			<p>This is the repository for Eastlands Institute of Technology's (EIT) Python course.</p>
+			<p class="view"><a href="codelab0.html">Code Lab 0</a>, 
+			                <a href="codelab1.html">Code Lab 1</a>,
+			                <a href="codelab2.html">Code Lab 2</a>,
+			                <a href="codelab3.html">Code Lab 3</a>,
+			                <a href="codelab4.html">Code Lab 4</a>,
+			                <a href="codelab5.html">Code Lab 5</a>,
+			                <a href="codelab6.html">Code Lab 6</a>,
+			                <a href="codelab7.html">Code Lab 7</a>,
+			                <a href="codelab8.html">Code Lab 8</a>,
+			                <a href="codelab9.html">Code Lab 9</a>,
+			                Code Lab 10,
+			                <a href="codelab11.html">Code Lab 11</a>,
+			                <a href="codelab12.html">Code Lab 12</a>,
+			                <a href="codelab13.html">Code Lab 13</a>,
+			                <a href="codelab14.html">Code Lab 14</a>,
+			                <a href="codelab15.html">Code Lab 15</a>,
+			                <a href="codelab16.html">Code Lab 16</a>,
+			                <a href="codelab17.html">Code Lab 17</a>,
+			                <a href="codelab18.html">Code Lab 18</a>,
+			                <a href="codelab19.html">Code Lab 19</a>,
+			                <a href="codelab20.html">Code Lab 20</a></p>
+		</header>
+		<section>
+			<h1>Code Lab 11</h1>
+			<p>Congratulations for having set up and customised your development environment! That's really the first step into the world of programming!</p>
+			
+			<h2>Exercise 1 - Functions and files</h2>
+			<p>In this first exercise, we are going to try to get the computer to print something onto the screen.</p>
+			<pre><code># This program demonstrates functions and files
+# Victor Wibisono, May 2013
+
+                from sys import argv
+
+                script, input_file = argv
+
+                def print_all(f):
+                    print f.read()
+
+                def rewind(f):
+                    f.seek(0)
+
+                def print_a_line(line_count, f):
+                    print line_count, f.readline()
+
+                current_file = open(input_file)
+
+                print "First, let's print the whole file:\n"
+
+                print_all(current_file)
+
+                print "Now let's rewind, kind of like a tape."
+
+                rewind(current_file)
+
+                print "let's print three lines:"
+
+
+            </code></pre>
+            <p>Now run the code in the terminal by pressing the "Run" button and see the result.</p>
+
+			<h2>Exercise 2 - Commenting your code</h2>
+			<p>In this exercise, we are going to learn about what the '#' character does in Python and how we could make it useful.</p>
+			<pre><code># This program prints some sentences onto the screen
+# Victor Wibisono, May 2013
+
+print "Yay!"
+print "My second program!"</code></pre>
+            <p>Now run your code by pressing the "Run" button.</p>
+			
+			<h2>Go Further</h2>
+			<p>Congratulations for having completed the two exercises. Now it's time to go further and learn more by answering these questions:</p>
+			<ol>
+				<li>Why do we need to put those comments on our code?</li>
+                <li>Make your script in exercise 2 print another line.</li>
+                <li>Make your script in exercise 2 print only the first line.</li>
+                <li>Find out about the history of the "Hello World!" program.</li>
+			</ol>
+
+		</section>
+		<footer>
+			<p>Maintained by <a href="https://github.com/devacto">Victor Wibisono</a></p>
+			<p>
+				<small>Hosted on GitHub Pages &mdash; Theme by <a
+					href="https://github.com/orderedlist">orderedlist</a></small>
+			</p>
+		</footer>
+	</div>
+	<script src="javascripts/scale.fix.js"></script>
+
+</body>
+</html>
