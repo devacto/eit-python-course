@@ -45,31 +45,98 @@
 			                <a href="codelab20.html">Code Lab 20</a></p>
 		</header>
 		<section>
-			<h1>Code Lab 1</h1>
-			<p>Congratulations for having set up and customised your development environment! That's really the first step into the world of programming!</p>
-			
-			<h2>Exercise 1 - Names, variables, code, functions</h2>
-			<p>In this first exercise, we are going to try to get the computer to print something onto the screen.</p>
-			<pre><code>print "Hello World!"</code></pre>
-            <p>Now run the code in the terminal by pressing the "Run" button and see the result.</p>
+			<h1>Code Lab 11</h1>
+			<p>Good to know you are completing much of the course!</p>
 
-			<h2>Exercise 2 - Commenting your code</h2>
-			<p>In this exercise, we are going to learn about what the '#' character does in Python and how we could make it useful.</p>
-			<pre><code># This program prints some sentences onto the screen
+			<h2>Exercise 1 - Functions and files</h2>
+			<p>Before we start, let's learn about the 3 things functions do:</p>
+                <ul>
+                    <li>They name pieces of code the way variables name strings and numbers.</li>
+                    <li>They take arguments the way your scripts take argv.</li>
+                    <li>Using #1 and #2, they let you make your own "mini scripts" or "tiny commands".</li>
+                </ul>
+            <p>In this exercise, we are going to learn how to create and use functions!</p>
+			<pre><code class="python"># codelab10-1.py
+# This program has several functions
 # Victor Wibisono, May 2013
 
-print "Yay!"
-print "My second program!"</code></pre>
+from sys import argv
+
+script, input_file = argv
+
+def print_all(f):
+    print f.read()
+
+def rewind(f):
+    f.seek(0)
+
+def print_a_line(line_count, f):
+    print line_count, f.readline()
+
+current_file = open(input_file)
+
+print "First let's print the whole file:\n"
+
+print_all(current_file)
+
+print "Now let's rewind, kind of like a tape."
+
+rewind(current_file)
+
+print "Let's print three lines:"
+
+current_line = 1
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)</code></pre>
+            <p>Now run the code in the terminal by pressing the "Run" button and see the result.</p>
+
+			<h2>Exercise 2 - Functions can return something</h2>
+			<p>Good job on getting the first exercise going! Now we will dive deeper into functions and variables.</p>
+			<pre><code># codelab11.py
+# This program demonstrates functions and variables
+# Victor Wibisono, May 2013
+
+def add(a, b):
+    print "ADDING %d + %d" % (a, b)
+    return a + b
+
+def subtract(a, b):
+    print "SUBTRACTING %d - %d" % (a, b)
+    return a - b
+
+def multiply(a, b):
+    print "MULTIPLYING %d * %d" % (a, b)
+    return a * b
+
+def divide(a, b):
+    print "DIVIDING %d / %d" % (a, b)
+    return a / b
+
+print "Let's do some math with just functions!"
+
+age     = add(30, 5)
+height  = subtract(78, 4)
+weight  = multiply(90, 2)
+iq      = divide(100, 2)
+
+print "Age: %d, Height: %d, Weight: %d, IQ: %d" % (age, height, weight, iq)
+
+# A puzzle for the extra credit, type it in anyway
+
+print "Here is a puzzle."
+
+what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+
+print "That becomes: ", what, "Can you do it by hand?"</code></pre>
             <p>Now run your code by pressing the "Run" button.</p>
 			
 			<h2>Go Further</h2>
-			<p>Congratulations for having completed the two exercises. Now it's time to go further and learn more by answering these questions:</p>
-			<ol>
-				<li>Why do we need to put those comments on our code?</li>
-                <li>Make your script in exercise 2 print another line.</li>
-                <li>Make your script in exercise 2 print only the first line.</li>
-                <li>Find out about the history of the "Hello World!" program.</li>
-			</ol>
+			<p>Congratulations for having completed the two exercises. Since this is quite a long exercise, there will not be any 'go further' exercises. Watch some YouTube videos if you'd like.</p>
 
 		</section>
 		<footer>
