@@ -45,6 +45,7 @@
 			                <a href="codelab20.html">Code Lab 20</a></p>
 		</header>
 		<section>
+<<<<<<< HEAD
 			<h1>Code Lab 11</h1>
 			<p>Congratulations for having set up and customised your development environment! That's really the first step into the world of programming!</p>
 			
@@ -89,23 +90,98 @@
 
 print "Yay!"
 print "My second program!"</code></pre>
+=======
+			<h1>Code Lab 10</h1>
+			<p>Well done for completing so much of the course!</p>
+			
+			<h2>Exercise 1 - Functions</h2>
+			<p>Before we start, let's learn about the 3 things functions do:</p>
+                <ul>
+                    <li>They name pieces of code the way variables name strings and numbers.</li>
+                    <li>They take arguments the way your scripts take argv.</li>
+                    <li>Using #1 and #2, they let you make your own "mini scripts" or "tiny commands".</li>
+                </ul>
+            <p>In this exercise, we are going to learn how to create and use functions!</p>
+			<pre><code class="python"># codelab10-1.py
+# This program has several functions
+# Victor Wibisono, May 2013
+
+# This one is like your scripts with argv
+def print_two(*args):
+    arg1, arg2 = args
+    print "arg1: %r, arg2: %r" % (arg1, arg2)
+
+# ok, that *args is actually pointless, we can just do this
+def print_two_again(arg1, arg2):
+    print "arg1: %r, arg2: %r" % (arg1, arg2)
+
+# this just takes one argument
+def print_one(arg1):
+    print "arg1: %r" % arg1
+
+# this one takes no arguments
+def print_none():
+    print "I got nothin'."
+
+print_two("Zed", "Shaw")
+print_two_again("Zed", "Shaw")
+print_one("First!")
+print_none()</code></pre>
+            <p>Now run the code in the terminal by pressing the "Run" button and see the result.</p>
+
+			<h2>Exercise 2 - Functions and variables</h2>
+			<p>Good job on getting the first exercise going! Now we will dive deeper into functions and variables.</p>
+			<pre><code># codelab10-2.py
+# This program demonstrates functions and variables
+# Victor Wibisono, May 2013
+
+def cheese_and_crackers(cheese_count, boxes_of_crackers):
+    print "You have %d cheese!" % cheese_count
+    print "You have %d boxes of crackers!" % boxes_of_crackers
+    print "Man, that's enough for a party!"
+    print "Get a blanket.\n"
+
+print "We can just give the function numbers directly:"
+cheese_and_Crackers(20, 30)
+
+print "OR, we can use variables from our script:"
+amount_of_cheese = 10
+amount_of_crackers = 50
+
+cheese_and_Crackers(amount_of_cheese, amount_of_crackers)
+
+print "We can even do math inside too:"
+cheese_and_crackers(10 + 20, 5 + 6)
+
+print "And we can combine the two, variables and math:"
+cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)</code></pre>
+>>>>>>> origin/gh-pages
             <p>Now run your code by pressing the "Run" button.</p>
 			
 			<h2>Go Further</h2>
 			<p>Congratulations for having completed the two exercises. Now it's time to go further and learn more by answering these questions:</p>
 			<ol>
+<<<<<<< HEAD
 				<li>Why do we need to put those comments on our code?</li>
                 <li>Make your script in exercise 2 print another line.</li>
                 <li>Make your script in exercise 2 print only the first line.</li>
                 <li>Find out about the history of the "Hello World!" program.</li>
+=======
+				<li>Go back through the script and type a comment above each line explaining in English what it does.</li>
+                <li>Write at least one more function of your own design and run it in 10 different ways.</li>
+>>>>>>> origin/gh-pages
 			</ol>
 
 		</section>
 		<footer>
 			<p>Maintained by <a href="https://github.com/devacto">Victor Wibisono</a></p>
 			<p>
+<<<<<<< HEAD
 				<small>Hosted on GitHub Pages &mdash; Theme by <a
 					href="https://github.com/orderedlist">orderedlist</a></small>
+=======
+				<small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+>>>>>>> origin/gh-pages
 			</p>
 		</footer>
 	</div>
